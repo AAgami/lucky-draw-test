@@ -1,5 +1,5 @@
 function getRandomMessage() {
-    fetch("http://localhost:8080/api/random-message")  // 백엔드 API 호출
+    fetch("https://aagami.github.io/lucky-draw-test/")  // 백엔드 API 호출
         .then(response => response.text())  // 응답 데이터를 텍스트로 변환
         .then(data => {
             document.getElementById("message").textContent = data;  // 화면에 메시지 표시
