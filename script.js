@@ -1,5 +1,5 @@
 function getRandomMessage() {
-    fetch("http://localhost:8080/api/random-message")  // 백엔드 API 호출
+    fetch("http://ec2-3-34-91-189.ap-northeast-2.compute.amazonaws.com:8080/api/random-message")  // 백엔드 API 호출
         .then(response => response.text())  // 응답 데이터를 텍스트로 변환
         .then(data => {
             console.log(data)
